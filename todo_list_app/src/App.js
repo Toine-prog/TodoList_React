@@ -1,9 +1,10 @@
 import './App.css';
+import { Button } from 'react-bootstrap';
 
 function App() {
   return (
     <div className="App">
-      test
+        <Button variant="primary">Primary</Button>{' '}
     </div>
   );
 }
