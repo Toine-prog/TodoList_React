@@ -1,3 +1,9 @@
 .App {
   text-align: center;
 }
+
+.navLink {
+  text-decoration: none;
+  color: white;
+  padding-left: 15px;
+}
