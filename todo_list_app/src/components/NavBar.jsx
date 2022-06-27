@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const NavBarItem = () => {
   return (
    <>
-    <Navbar bg="dark" variant="dark">
+    <Navbar bg="dark" variant="dark" className="marginBottom">
         <Container>
             <Nav className="me-auto">
                 <NavLink className="navLink" to="/">Home</NavLink>

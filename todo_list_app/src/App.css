@@ -16,3 +16,26 @@
   color: white;
   padding-left: 15px;
 }
+
+.marginBottom {
+  margin-bottom: 25px;
+}
+
+/* -------------------formControl properties----------------- */
+.box {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.flexHorizontal {
+  display: flex;
+  align-items: center;
+}
+
+/* --------------------List Items properties ------------------- */
+.listItems {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
