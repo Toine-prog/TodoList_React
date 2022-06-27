@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+/* -------------------Home page properties----------------- */
+
+.homeTitle {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 15%;
+}
+
+/* -------------------NavBarItem properties----------------- */
 .navLink {
   text-decoration: none;
   color: white;
