@@ -70,10 +70,10 @@ function UseState() {
 
   return (
     <div className="box">
-      <h1>Use State Todo List</h1>
+      <h1>UseState Todo List</h1>
       <Form>
         <div className="flexHorizontal">
-          <Form.Control placeholder="Add an item" value={itemToAdd} onChange={OnChangeItemText} />
+          <Form.Control placeholder="Add an item" value={itemToAdd} onChange={OnChangeItemText} autoFocus/>
           <Button variant="success" onClick={addItem}><FaPlusSquare /></Button>
         </div>
       </Form>
