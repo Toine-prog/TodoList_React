@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { FaPlusSquare, FaEdit, FaCheckSquare } from 'react-icons/fa';
 import { ImBin } from 'react-icons/im';
@@ -63,10 +63,18 @@ function UseState() {
     setIsEditing(false);
   }
 
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState(() => {
+    const saved = localStorage.getItem("items");
+    const initialValue = JSON.parse(saved);
+    return initialValue || [];
+  });
   const [itemToAdd, setItemToAdd] = useState("");
   const [editedItem, setEditedItem] = useState("");
   const [isEditing, setIsEditing] = useState(false);
+
+  useEffect(() => {
+    localStorage.setItem("items", JSON.stringify(items));
+  }, [items])
 
   return (
     <div className="box">
