@@ -1,7 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { Form, Button } from 'react-bootstrap';
-import { FaPlusSquare, FaEdit, FaCheckSquare } from 'react-icons/fa';
+import { FaEdit, FaCheckSquare } from 'react-icons/fa';
+import { TodoForm, Todo, Todos } from '../components/TodoList'
 import { ImBin } from 'react-icons/im';
 
 
@@ -79,12 +80,7 @@ function UseState() {
   return (
     <div className="box">
       <h1>Use State Todo List</h1>
-      <Form>
-        <div className="flexHorizontal">
-          <Form.Control placeholder="Add an item" value={itemToAdd} onChange={OnChangeItemText} />
-          <Button variant="success" onClick={addItem}><FaPlusSquare /></Button>
-        </div>
-      </Form>
+      <TodoForm itemToAdd={itemToAdd}  handleChange = {OnChangeItemText}  addItem = {addItem} />
       <div className="listItems">
         {items && items.map((item) => {
           if(item.readOnly) {
