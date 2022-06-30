@@ -1,7 +1,6 @@
 import './App.css';
-import { Button } from 'react-bootstrap';
 import NavBarItem from './components/NavBar';
-import  { UseContext, UseEffects, UseState, UseRef, Home } from "./screens";
+import  { UseContext, UseEffects, UseState, UseReducer, Home } from "./screens";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -14,7 +13,7 @@ function App() {
             <Route path="/UseState" element={<UseState />} />
             <Route path="/UseEffects" element={<UseEffects />} />
             <Route path="/UseContext" element={<UseContext />} />
-            <Route path="/UseRef" element={<UseRef />} />
+            <Route path="/UseReducer" element={<UseReducer />} />
           </Routes>
       </BrowserRouter>
     </div>

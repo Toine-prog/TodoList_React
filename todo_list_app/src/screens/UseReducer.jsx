@@ -5,7 +5,7 @@ import { FaPlusSquare, FaEdit, FaCheckSquare } from 'react-icons/fa';
 import { ImBin } from 'react-icons/im';
 
 
-function UseRef() {
+function UseReducer() {
   const OnChangeItemText = (e) => {
     setItemToAdd(e.target.value);
   }
@@ -69,7 +69,7 @@ function UseRef() {
 
   return (
     <div className="box">
-      <h1>UseRef Todo List</h1>
+      <h1>UseReducer Todo List</h1>
       <Form>
         <div className="flexHorizontal">
           <Form.Control placeholder="Add an item" value={itemToAdd} onChange={OnChangeItemText} autoFocus/>
@@ -101,4 +101,4 @@ function UseRef() {
   )
 }
 
-export default UseRef
+export default UseReducer
