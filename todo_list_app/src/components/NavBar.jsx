@@ -10,7 +10,6 @@ const NavBarItem = () => {
             <Nav className="me-auto">
                 <NavLink className="navLink" to="/">Home</NavLink>
                 <NavLink className="navLink" to="/UseState">UseState</NavLink>
-                <NavLink className="navLink" to="/UseEffects">UseEffects</NavLink>
                 <NavLink className="navLink" to="/UseContext">UseContext</NavLink>
                 <NavLink className="navLink" to="/UseReducer">UseReducer</NavLink>
             </Nav>

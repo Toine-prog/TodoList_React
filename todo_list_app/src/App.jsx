@@ -1,6 +1,6 @@
 import './App.css';
 import NavBarItem from './components/NavBar';
-import  { UseContext, UseEffects, UseState, UseReducer, Home } from "./screens";
+import  { UseContext, UseState, UseReducer, Home } from "./screens";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -11,7 +11,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/UseState" element={<UseState />} />
-            <Route path="/UseEffects" element={<UseEffects />} />
             <Route path="/UseContext" element={<UseContext />} />
             <Route path="/UseReducer" element={<UseReducer />} />
           </Routes>
